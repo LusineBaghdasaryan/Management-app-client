@@ -23,26 +23,29 @@ function Clients() {
     
     const {singleClient, providers, clients} = useSelector(state => state);
     
+    
+    
     useEffect(() => {
         !showClientModal &&
-            dispatch(getClients());
-            dispatch(getProviders());
-        
+        dispatch(getClients());
+        dispatch(getProviders());
+        // eslint-disable-next-line
     }, [showClientModal]);
-    
     
     useEffect(() => {
         isEdit && setIsEdit(false);
-        showClientModal && setShowClientModal(false)
-        showDialogModal && setShowDialogModal(false)
+        showClientModal && setShowClientModal(false);
+        showDialogModal && setShowDialogModal(false);
+        // eslint-disable-next-line
     }, [clients]);
     
     useEffect(() => {
-        !showClientModal && setIsEdit(false)
+        !showClientModal && setIsEdit(false);
     }, [showClientModal]);
     
     useEffect(() => {
-        showDialogModal && setShowDialogModal(false)
+         showDialogModal && setShowDialogModal(false);
+        // eslint-disable-next-line
     }, [providers]);
     
     
