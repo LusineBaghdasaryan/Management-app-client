@@ -3,7 +3,7 @@ import {axiosRequest} from '../utils/axiosRequest.util'
 
 
 //----------- URL -----------
-const apiUrl = 'https://client-management-api.herokuapp.com';
+const apiUrl = 'https://client-management-api.herokuapp.com/api';
 
 
 //--------- Change loading -----------
