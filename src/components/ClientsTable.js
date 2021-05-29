@@ -21,7 +21,7 @@ function ClientsTable({editClient, deleteClient}) {
                         <th/>
                     </tr>
                     </thead>
-                    <tbody className='client-table'>
+                    <tbody>
                     {!!clients.length && clients.map(client => {
                         const providers = client.providers.length
                                 ? client.providers.map(item => item.name).join(',')
